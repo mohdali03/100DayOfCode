@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List With Local Storage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+
+</head>
+
+<body class="bg-gradient-to-br from-red-500  to-blue-500">
+    <div class="container flex flex-col space-y-20 m-auto h-screen ">
+        <div id="new-task" class="bg-gray-50 flex  w-full mx-auto mt-40  h-fit items-center  rounded-2xl">
+            <input type="text" class="h-2/3  w-4/5 p-5 shadow-2xl rounded-lg text-2xl focus:ring-purple-500 focus:ring-2 focus:outline-none   focus:shadow-purple-300  focus:drop-shadow placeholder:text-2xl m-6 ml-8 mr-4" placeholder="Enter The Task Here..." />
+            <button id="push" class=" transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:bg-purple-500 text-white text-3xl font-serif       duration-500   rounded-lg   w-64  h-2/3 mx-14">Add</button>
+        </div>
+        <div id="tasks" class="bg-gray-50 rounded-2xl h-fit p-2 w-full flex  relative mx-auto mt-20" ></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
