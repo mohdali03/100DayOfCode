@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/originals/06/c4/f7/06c4f70ec5931e2342e703e8a3f0a253.png">
+
+
+  <title> Weather App </title>
+</head>
+
+<body>
+
+
+  <nav class="flex items-center border shadow-md border-slate-100">
+    <div class="w-12 m-4 ml-8  ">
+      <img src="https://i.pinimg.com/originals/06/c4/f7/06c4f70ec5931e2342e703e8a3f0a253.png
+      " alt="Weather img" class="rounded-3xl hover:rounded transition-all">
+    </div>
+    <h1 class="text-2xl ml-4">Weather Web App</h1>
+
+  </nav>
+  <div class="flex items-center w-[95%] sm:w-full m-auto mt-44 my-40 justify-center">
+    <div class="flex w-[90%] ml-auto rounded space-x-6">
+
+
+
+      <input type="text"
+        class="px-4 rounded-2xl  border-4 border-white transition-all text-2xl h-20 focus:ring-4 focus:ring-blue-400 focus:outline-none focus:border-0 py-2 shadow-xl w-2/3 "
+        placeholder="Search City Name for Weather ..." id="CityName">
+      <button
+        class="flex items-center   rounded-2xl border-4 transition-all  border-sky-500 bg-sky-500 shadow-xl hover:shadow-blue-300 hover:shadow-xl hover:font-semibold  text-2xl h-20 focus:ring-4 focus:ring-white focus:outline-none focus:border-0 py-2 w-96 justify-center  px-8 w-1/5"
+        id="Submit">
+        Search
+      </button>
+
+    </div>
+  </div>
+
+
+  <div class="container mt-20  flex m-auto w-fit justify-center">
+    <h1 class="font-extrabold text-5xl md:text-7xl w-fit ">Weather of <span id="Citynaam"
+        class="font-extrabold text-5xl md:text-7xl w-fit"></span></h1>
+  </div class="">
+
+  <div class="weather_forcast flex flex-wrap w-[90%] p-6 space-y-7 md:space-x-9 md:space-y-0 m-auto  mt-12">
+
+    <div
+      class="w-full max-w-sm px-6 justify-center  transition-all duration-500 delay-75 ease-in-out border-blue-500 border-4 rounded-2xl shadow-xl hover:shadow-blue-300  h-86 p-5  sm:p-8 ">
+      <div class="m-auto w-fit  ">
+
+        <h5 class="mb-4 text-3xl font-medium text-black ">Temperature</h5>
+        <div class="flex items-baseline w-fit m-auto">
+          <span class="text-6xl font-extrabold tracking-tight" id="temp">20</span>
+          <span class="text-6xl h-fit mx-1  font-semibold text-gray-500 ">&#8451</span>
+
+        </div>
+        <!-- List -->
+        <ul role="list" class="space-y-4 m-auto  my-7">
+          <li class="flex  space-x-3">
+
+
+            <span class="text-lg font-normal leading-tight text-black 0">Temperature is <span id="temp2"> </span>
+            </span>
+          </li>
+          <li class="flex space-x-3">
+
+
+            <span class="text-lg font-normal leading-tight text-black ">Min Temperature is <span id="min_temp"></span>
+            </span>
+          </li>
+          <li class="flex space-x-3">
+
+            <span class="text-lg font-normal leading-tight text-black ">Max Temperature is <span id="max_temp"></span>
+            </span>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div
+      class=" w-full max-w-sm px-6 justify-center  transition-all duration-500 delay-75 ease-in-out border-blue-500 border-4 rounded-2xl shadow-xl hover:shadow-blue-300 h-86   sm:p-8">
+      <div class="m-auto w-fit  ">
+
+        <h5 class="mb-4 text-3xl font-medium text-black ">Humidity Info</h5>
+        <div class="flex items-baseline w-fit m-auto">
+          <span class="text-6xl font-extrabold tracking-tight" id="humidity">49</span>
+          <span class="text-6xl h-fit mx-1  font-semibold text-gray-500 ">%</span>
+
+        </div>
+        <!-- List -->
+        <ul role="list" class="space-y-4 m-auto  my-7">
+          <li class="flex  space-x-3">
+
+
+            <span class="text-lg font-normal leading-tight text-black 0">Humidity <span id="humidity2"></span>
+            </span>
+          </li>
+          <li class="flex space-x-3">
+
+
+            <span class="text-lg font-normal leading-tight text-black ">Wind Degree is <span
+                id="wind_degrees"></span></span>
+          </li>
+          <li class="flex space-x-3">
+
+            <span class="text-lg font-normal leading-tight text-black ">Feels Like <span id="feels_like"></span> </span>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div
+      class="w-full max-w-sm px-6 justify-center  transition-all duration-500 delay-75 ease-in-out border-blue-500 border-4 rounded-2xl shadow-xl hover:shadow-blue-300  h-86  p-5   sm:p-8 ">
+      <div class="m-auto w-fit  ">
+
+        <h5 class="mb-4 text-3xl font-medium text-black ">Wind info</h5>
+        <div class="flex items-baseline w-fit m-auto space-x-1">
+          <span class="text-6xl font-extrabold tracking-normal" id="wind_speed">49</span>
+          <span class="text-5xl h-fit mx-1  font-semibold text-gray-500 ">km/hr</span>
+
+        </div>
+        <!-- List -->
+        <ul role="list" class="space-y-4 m-auto  my-7">
+          <li class="flex  space-x-3">
+
+
+            <span class="text-lg font-normal leading-tight text-black 0">Wind Speed is <span id="wind_speed2"></span>
+            </span>
+          </li>
+          <li class="flex space-x-3">
+
+
+            <span class="text-lg font-normal leading-tight text-black ">Sunrise Time is <span id="sunrise"></span>
+            </span>
+          </li>
+          <li class="flex space-x-3">
+
+            <span class="text-lg font-normal leading-tight text-black ">Sunrise time is <span id="sunset"></span>
+            </span>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+
+  </div>
+
+
+
+
+
+
+</body>
+
+
+</html>
